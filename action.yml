@@ -83,12 +83,12 @@ runs:
   using: "composite"
   steps:
     - id: "SETUP_RUBY"
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@v1.300.0
       with:
         ruby-version: ${{ inputs.ruby-version }}
         bundler: ${{ inputs.bundler-version }}
     - id: "SETUP_NODE"
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v6.3.0
       with:
         node-version: 16
     - id: "RUN_INDEX"
